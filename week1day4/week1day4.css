@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: small;
+    background-color: beige;
+}
+
+.heading {
+    width: 200px;
+    margin: 30px;
+    background-color: lightgray;
+}
+
+.text {
+    margin: 30px;
+    text-align: right;
+}
+
+.paragraph_1 {
+    color: green;
+}
+
+.boldfont_text {
+    font-weight: bold;
+}
+
+.italicfont_text {
+    font-style: italic;
+}
+
+.first_block_element {
+    background-color: red;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.second_block_element {
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+}
+
+.textarea {
+    resize: none;
+}

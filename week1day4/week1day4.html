@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>week1day4</title>
+    <link rel="stylesheet" href="week1day4.css">
+</head>
+<body>
+<section id="4-1">
+    <h1>БЛОК 1</h1>
+    <div>
+    <div class="heading"><h2>HTML</h2></div>
+    <p class="text paragraph_1"><span class="boldfont_text">HTML</span> (от англ. <span class="italicfont_text">HyperText Markup Language</span> – «язык гипертектовой разметки») – стандартизированный язык
+        разметки веб-страниц во Всемирной паутине. Код HTML интерпретируется браузерами; полученная в результате
+        интерпретации страница отображается на экране монитора компьютера или мобильного устройтва.</p>
+    <p class="text">Язык HTML до 5-й версии определялся как приложение SGML(стандартного обобщенного языка разметки по тандарту ISO
+        8879). Спецификации HTML5 формулируются в терминах DOM(объектной модели документа).</p>
+    <p class="text">Строгим вариантом HTML является XHTML, он наследует cинтаксис XML и является приложением языка XML в области разметки
+        гипертекста.</p>
+    <p class="text">HTML-страницы, как правило, открываются браузерами обмениваясь с сервером информацией по протоколу HTTP или HTTPS, в
+        виде простого текста или с использованием шифрования.</p>
+
+    <hr/>
+
+    <div class="heading"><h3>Общее представление</h3></div>
+    <p class="text">Изначально язык HTML был задуман как средство структурирования и форматирования документов без их привязки к
+        средствам воспроизведения (отображения). В идеале, текст с разметкой HTML должен был без стилистичеких и структурных
+        искажений воспроизводиться на оборудовании с различной технической оснащённостью (цветной экран современного
+        компьютера, монохромный экран органайзера, ограниченный по размерам экран мобильного телефона или устройства и
+        программы голосового воспроизведения текстов). Однако современное применение HTML очень далеко от его изначальной
+        задачи. Например, тег <code>&lttable&gt</code> предназначен для создания в документах таблиц, но иногда используется
+        и для оформления размещения элементов на странице. С течением времени основная идея платформонезависимости языка
+        HTML была принесена в жертву современным потребностям в мультимедийном и графическом оформлении.</p>
+</div>
+<div class="first_block_element">
+    <div class="second_block_element"></div>
+</div>
+</section>
+<section id="4-2">
+    <h1>БЛОК 2</h1>
+    <h1>1.</h1>
+    <form>
+        <fieldset>
+            <legend>Checkbox</legend>
+                <input type="checkbox">
+                <input type="checkbox" disabled>
+        </fieldset>
+        <fieldset>
+            <legend>File</legend>
+                <input type="file">
+                <input type="file" disabled>
+        </fieldset>
+        <fieldset>
+            <legend>Image</legend>
+                <input type="image">
+                <input type="image" disabled>
+        </fieldset>
+        <fieldset>
+            <legend>Password</legend>
+            <input type="password">
+            <input type="password" disabled>
+        </fieldset>
+        <fieldset>
+            <legend>Text</legend>
+            <input type="text">
+            <input type="text" disabled>
+        </fieldset>
+        <fieldset>
+            <legend>Email</legend>
+            <input type="email">
+            <input type="email" disabled>
+        </fieldset>
+        <fieldset>
+            <legend>Date</legend>
+            <input type="date">
+            <input type="date" disabled>
+        </fieldset>
+    </form>
+    <h1>2.</h1>
+    <button>Это кнопка button</button>
+    <input type="button" value="Это кнопка input">
+    <h1>3.</h1>
+    <input type="radio" name="radio">
+    <input type="radio" name="radio">
+    <input type="radio" name="radio">
+    <h1>4.</h1>
+    <form>
+        <textarea class="textarea" maxlength="100" rows="3"></textarea>
+    </form>
+    <h1>5.</h1>
+    <form>
+        <textarea>textarea, размеры которой можно изменять</textarea>
+    </form>
+    <h1>6.</h1>
+    <h2>a</h2>
+    <form>
+        <select>
+            <option disabled selected>Выберите число</option>
+            <option>Число 1</option>
+            <option>Число 2</option>
+            <option>Число 3</option>
+            <option>Число 4</option>
+            <option>Число 5</option>
+        </select>
+    </form>
+    <h2>b</h2>
+    <form>
+        <select size="6" multiple>
+            <option disabled>Выберите число (можно несколько)</option>
+            <option>Число 1</option>
+            <option>Число 2</option>
+            <option>Число 3</option>
+            <option>Число 4</option>
+            <option>Число 5</option>
+        </select>
+    </form>
+    <h1>7.</h1>
+    <label for="input_1">Первый способ</label><br><br><input type="text" id="input_1"><br><br>
+    <!-- Первый способ -->
+    <label>Второй способ <br><br>
+        <input type="text">
+    </label>
+    <!-- Второй способ -->
+    <h1>8-9.</h1>
+    <form>
+        <fieldset>
+            <legend>Это заголовок группы элементов формы</legend>
+            <input type="email" tabindex="3">
+            <input type="password" tabindex="2">
+            <button type="submit" tabindex="1">Отправить</button>
+        </fieldset>
+    </form>
+</section>
+</body>
+</html>
