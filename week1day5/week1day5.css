@@ -60,3 +60,22 @@ tbody .table_lastrow td:first-child {
 tbody .table_lastrow td:last-child {
     border-bottom-right-radius: 20px;
 }
+
+.formula {
+    font-size: x-large;
+    font-style: italic;
+}
+
+.sub {
+    vertical-align: sub;
+    font-size: smaller;
+    color: blue;
+    font-style: normal;
+}
+
+.sup {
+    vertical-align: super;
+    color: red;
+    font-size: smaller;
+    font-style: normal;
+}
