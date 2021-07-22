@@ -64,6 +64,7 @@ tbody .table_lastrow td:last-child {
 .formula {
     font-size: x-large;
     font-style: italic;
+    margin: 20px;
 }
 
 .sub {
@@ -79,3 +80,49 @@ tbody .table_lastrow td:last-child {
     font-size: smaller;
     font-style: normal;
 }
+
+.strip {
+    background: firebrick;
+    margin: 20px;
+    padding: 10px;
+}
+
+.link1 {
+    font-style: italic;
+    font-size: xx-large;
+    color: red;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+
+
+.link2 {
+    font-style: italic;
+    font-size: xx-large;
+    color: greenyellow;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.link3 {
+    font-style: italic;
+    font-size: xx-large;
+    color: lightskyblue;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.diagram {
+    background: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    border: 30px solid limegreen;
+    border-right: 30px solid lightgreen;
+    border-radius: 100px;
+    line-height:100px;
+}
+
+
