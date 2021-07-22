@@ -1,0 +1,30 @@
+.square {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border: solid;
+    border-width: 3px;
+    border-color: red;
+    margin: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: deepskyblue;
+    border: solid black;
+    border-radius: 50%;
+    margin: 20px;
+    border-width: 3px;
+    padding: 5px;
+}
+
+.circle_inside {
+    width: 94px;
+    height: 94px;
+    background: deepskyblue;
+    border: solid black;
+    border-radius: 50%;
+    border-width: 3px;
+}
+
