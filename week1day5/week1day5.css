@@ -121,8 +121,13 @@ tbody .table_lastrow td:last-child {
     font-size: 40px;
     border: 30px solid limegreen;
     border-right: 30px solid lightgreen;
-    border-radius: 100px;
+    border-radius: 50%;
     line-height:100px;
 }
 
-
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
