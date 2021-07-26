@@ -385,3 +385,32 @@ li.file:hover .file_submenu, li.edit:hover .edit_submenu {
     margin: auto;
     border-radius: 50%;
 }
+
+.menu1-div {
+    margin: 20px;
+}
+
+ul.menu1 {
+    display: flex;
+    list-style: none;
+}
+
+a.submenu1-a {
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 40px;
+    border: #333333 solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0 #333333;
+    color: gray;
+}
+
+a.submenu1-a:hover {
+    color: black;
+    font-size: 1.3em;
+    background: gainsboro;
+}
+
+/* Блок 2 */
+
