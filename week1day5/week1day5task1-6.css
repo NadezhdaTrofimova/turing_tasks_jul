@@ -414,3 +414,21 @@ a.submenu1-a:hover {
 
 /* Блок 2 */
 
+.menu2-div {
+    border: gray solid 1px;
+    margin: 20px;
+    padding: 0 25px;
+    box-shadow: 3px 3px 7px 1px black;
+}
+
+
+.menu2-li:hover {
+    font-size: 1.2em;
+}
+
+.menu2-a {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+}
+
