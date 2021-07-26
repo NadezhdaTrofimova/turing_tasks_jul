@@ -221,3 +221,124 @@ button {
     width:70px;
     height: 30px;
 }
+
+
+.nav {
+    box-sizing: border-box;
+    height: 150px;
+}
+
+ul {
+    list-style-type: none;
+    font-family: Times, serif;
+    padding: 0;
+}
+
+.nav_menu {
+    margin: 20px;
+    display: block;
+    position: relative;
+}
+
+li.file, li.edit {
+    float: left;
+    width: 50px;
+    position: relative;
+    line-height: 25px;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+li.file:hover:before, li.edit:hover:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 7px 2px silver;
+    border-radius: 5px 5px 0 0;
+    z-index: -1;
+}
+
+li.file {
+    margin-right: 10px;
+}
+
+li.file a, li.edit a {
+    color: blue;
+}
+
+li.file:hover a.main, li.edit:hover a.main {
+    text-decoration: none;
+    color: black;
+}
+
+.file_submenu, .edit_submenu {
+    display: none;
+    width: 120px;
+    position: absolute;
+    padding: 0 3px;
+    left: 0;
+    background-color: white;
+}
+
+.file_submenu:before, .edit_submenu:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 7px 2px silver;
+    z-index: -1;
+    border-radius: 0 5px 5px 5px;
+}
+
+.file_submenu:after, .edit_submenu:after {
+    width: 43px;
+    height: 10px;
+    position: absolute;
+    content: '';
+    display: block;
+    box-shadow: 19px 2px 5px 5px silver;
+    top: 1px;
+    left: 60px;
+    z-index: -1;
+}
+
+li.file:hover .file_submenu, li.edit:hover .edit_submenu {
+    display:block;
+}
+
+.file_submenu li a {
+    display: inline-block;
+    width: 100%;
+    line-height: 1.5em;
+    padding: 3px 0 3px 3px;
+    text-decoration: none;
+    color: #3337D6;
+    margin: 3px 0 3px 2px;
+}
+
+.edit_submenu li a {
+    display: inline-block;
+    width: 100%;
+    line-height: 1.5em;
+    padding: 3px 0 3px 3px;
+    color: #3337D6;
+    margin: 3px 0 3px 2px;
+}
+
+.file_submenu li:hover a {
+    background-color: #37ABFF;
+    color: white;
+}
+
+.edit_submenu li:hover a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
