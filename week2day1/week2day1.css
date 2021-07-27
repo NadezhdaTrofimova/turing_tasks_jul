@@ -259,3 +259,15 @@
 }
 
 /**********14.*******/
+
+.ul14 {
+    margin: 20px;
+    font-size: 1.6em;
+}
+
+.ul14-li:not(:first-child) {
+    color: red;
+}
+
+
+/*******15.******/
