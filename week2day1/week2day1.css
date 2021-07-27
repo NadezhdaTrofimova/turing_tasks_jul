@@ -1,0 +1,45 @@
+/******1.******/
+
+.div1-container {
+    display: flex;
+
+    margin: 20px;
+}
+
+.div1-triangle {
+    margin: 10px;
+}
+
+.div1-triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+.div1-triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 100px solid red;
+}
+
+.div1-triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 100px solid red;
+}
+
+.div1-triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 100px solid red;
+}
+
+/******2.******/
