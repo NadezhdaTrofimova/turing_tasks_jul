@@ -271,3 +271,32 @@
 
 
 /*******15.******/
+
+.div15 {
+    overflow-y: scroll;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    box-shadow: 0 0 6px 1px red;
+    margin: 20px;
+}
+
+.div15-div {
+    min-height: 400px;
+}
+
+.div15::-webkit-scrollbar {
+    background-color: red;
+    width: 20px;
+    border-radius: 3px;
+}
+
+.div15::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px 1px red;
+}
+
+/*******16*****/
+
