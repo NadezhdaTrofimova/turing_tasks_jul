@@ -446,8 +446,7 @@ a.submenu1-a:hover {
     width: 300px;
     height: 200px;
     margin: 20px;
-    display: table-cell;
-    vertical-align: middle;
+    display: table;
     border: 15px solid;
     border-image-slice: 2;
     border-image-source: linear-gradient(to left, deeppink, purple);
@@ -455,4 +454,69 @@ a.submenu1-a:hover {
 
 .p3 {
     text-align: center;
+    margin: 80px;
 }
+
+.menu4-div {
+    margin: 20px;
+}
+
+.menu4-ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu4-ul li {
+    border-radius: 0 50px 50px 0;
+    box-shadow: 2px 0 0 0 gray, -2px 0 0 0 whitesmoke inset;
+    background: linear-gradient(to top, #789846FF, white);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu4-li1 {
+    width: 50px;
+    z-index: 5;
+}
+
+.menu4-li2 {
+    width: 55px;
+    position: relative;
+    left: -10px;
+    z-index: 4;
+}
+
+.menu4-li3 {
+    width: 60px;
+    position: relative;
+    left: -20px;
+    z-index: 3;
+}
+
+.menu4-li4 {
+    width: 70px;
+    position: relative;
+    left: -30px;
+    z-index: 2;
+}
+
+.menu4-li5 {
+    width: 200px;
+    position: relative;
+    left: -40px;
+    z-index: 1;
+}
+
+.menu4-ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.menu4-li:hover {
+    font-weight: bold;
+}
+
