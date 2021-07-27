@@ -550,3 +550,24 @@ a.submenu1-a:hover {
 }
 
 /**********************/
+
+.button6 {
+    margin: 20px;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid green;
+    box-shadow: 0 0 5px 0 black, 0 0 10px 0 green inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button6-a {
+    text-decoration: none;
+    font-size: 1.8em;
+    color: green;
+    font-style: italic;
+    padding: 20px 40px;
+}
+
