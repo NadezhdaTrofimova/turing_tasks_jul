@@ -83,3 +83,19 @@
 }
 
 /*******4.******/
+
+.div4 {
+    margin: 20px;
+}
+
+.div4-p1::selection {
+    background-color: blue;
+    color: white;
+}
+
+.div4-p2::selection {
+    background-color: red;
+    color: white;
+}
+
+/**********5.********/
