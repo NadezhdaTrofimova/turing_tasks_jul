@@ -179,3 +179,34 @@
 }
 
 /*********11.******/
+
+.div11 {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.checkbox11-label {
+    font-size: 2em;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.checkbox11 {
+    display: none;
+}
+
+.checkbox11-label::before {
+    content: " ";
+    display: inline-block;
+    background-color: #D52B1E;
+    width: 20px;
+    height: 20px;
+    border: 1px solid red;
+    margin-right: 20px;
+}
+
+.checkbox11:checked + label {
+    color: red;
+    opacity: 1;
+}
