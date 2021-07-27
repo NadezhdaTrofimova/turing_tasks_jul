@@ -99,3 +99,13 @@
 }
 
 /**********5.********/
+
+.input5 {
+    margin-left: 20px;
+    width: 200px;
+}
+
+.input5::placeholder {
+    color: blue;
+    background-color: darkgray;
+}
