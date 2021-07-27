@@ -161,3 +161,21 @@
     font-size: 2em;
     color: blue;
 }
+
+/********10.*****/
+
+
+.ol10 {
+    margin: 20px;
+}
+
+.ol10-li {
+    font-size: 1.5em;
+}
+
+.ol10-li:nth-child(odd) {
+    font-size: 2em;
+    color: blue;
+}
+
+/*********11.******/
