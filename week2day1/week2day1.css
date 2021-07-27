@@ -122,3 +122,16 @@
 .input6::placeholder {
     color: red;
 }
+
+/********7.********/
+
+.div7 {
+    margin: 20px;
+}
+
+.div7-div::before {
+    content: '\25ba';
+    padding-right: 10px;
+}
+
+/********8.******/
