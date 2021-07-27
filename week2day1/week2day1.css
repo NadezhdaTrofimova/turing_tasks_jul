@@ -210,3 +210,41 @@
     color: red;
     opacity: 1;
 }
+
+/*****12.*****/
+
+
+.div12 {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.radio12-label {
+    font-size: 1.2em;
+    opacity: 0.5;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.radio12 {
+    display: none;
+}
+
+.radio12-label::before {
+    content: " ";
+    display: inline-block;
+    background-color: #D52B1E;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid red;
+    margin-right: 20px;
+}
+
+.radio12:checked + label {
+    color: red;
+    opacity: 1;
+}
+
+/*******13.*******/
