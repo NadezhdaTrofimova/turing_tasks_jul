@@ -149,3 +149,28 @@
     }
 }
 /*****6.*****/
+
+.div6 {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.airplane {
+    width: 50px;
+    animation: fly 4s linear infinite;
+
+}
+
+@keyframes fly {
+    from {
+        transform: rotate(0deg) translateX(80px) rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(80px) rotate(180deg);
+    }
+}
+
+/*****7.***/
