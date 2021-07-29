@@ -1,0 +1,15 @@
+/****1.****/
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.div1-div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    box-shadow: 0 0 2px 2px gray;
+}
+
