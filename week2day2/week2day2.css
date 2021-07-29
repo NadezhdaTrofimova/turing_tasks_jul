@@ -78,3 +78,74 @@
 }
 
 /*****5.****/
+
+.div5 {
+    width: 500px;
+    height: 60px;
+    background-color: #30343DFF;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div5-div {
+    width: 470px;
+    height: 40px;
+    background-color: #30343DFF;
+    box-shadow: -0.5px -0.5px 5px 1px black inset;
+    border-radius: 50px;
+}
+
+.div5-div-div {
+    width: 470px;
+    height: 40px;
+    background: linear-gradient(45deg, #3b7308, #76ff00);
+    border-radius: 50px;
+    box-shadow: -0.5px -0.5px 5px 1px black inset;
+    animation: progress 10s infinite linear, radius 10s infinite;
+}
+
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes radius {
+    0% {
+        border-radius: 50px;
+    }
+    4% {
+        border-radius: 50px 0 0 50px;
+    }
+
+    46% {
+        border-radius: 50px 0 0 50px;
+    }
+
+    50% {
+        border-radius: 50px;
+    }
+
+    54% {
+        border-radius: 50px 0 0 50px;
+    }
+
+    96% {
+        border-radius: 50px 0 0 50px;
+    }
+
+    100% {
+        border-radius: 50px;
+    }
+}
+/*****6.*****/
