@@ -61,5 +61,20 @@
 
 /*4.*/
 
+.div4 {
+    margin: 20px;
+}
 
+.div4-input {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
 
+.div4-input:hover {
+    transform: scale(2, 1.5) translateX(50vh);
+    transition-duration: 10s;
+}
+
+/*****5.****/
