@@ -53,3 +53,190 @@
 .div3-middle {
     flex-shrink: 1.3;
 }
+
+/*****4.****/
+
+
+.div4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div4-div  {
+    width: 250px;
+    height: 200px;
+    background: #C4C4C4;
+    margin: 36px 40px;
+}
+
+.image4 {
+    width: 189px;
+    height: 120px;
+    background: #DDDDDD;
+    margin-left: 31px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span4-image-span {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.div4-text {
+    width: 139px;
+    height: 12px;
+    background: #DDDDDD;
+    margin-top: 7px;
+    margin-left: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.span4 {
+    font-family: Roboto, sans-serif;
+    font-size: 8px;
+    line-height: 9px;
+    color: #000000;
+    margin-left: 12px;
+}
+
+
+.button4 {
+    border: none;
+    background: #BB0000;
+    width: 188px;
+    height: 14px;
+    margin-top: 7px;
+    margin-left: 31px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button4-span {
+    margin-left: 16px;
+    margin-top: 3px;
+    font-family: Roboto, sans-serif;
+    font-size: 8px;
+    line-height: 9px;
+    color: #000000;
+}
+
+/****5.*****/
+
+
+.div5 {
+    display: flex;
+    justify-content: center;
+}
+
+.div5-div  {
+    width: 723px;
+    height: 446px;
+    background: #C4C4C4;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div5-div-h2 {
+    width: 328px;
+    height: 48px;
+    background: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div5-h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.div5-div-span {
+    width: 592px;
+    height: 175px;
+    background: #DDDDDD;
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+    margin-top: 48px;
+    justify-content: center;
+}
+
+.div5-span {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.button5 {
+    width: 340px;
+    height: 51px;
+    background: #BB0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button5 {
+    border: none;
+    background: #BB0000;
+    width: 340px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button5-span {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.div5-modal-open {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    border: black solid 1px;
+    padding: 10px;
+}
+
+.div5-modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.div5-modal:target {
+    display: flex;
+}
+.container5-modal {
+    margin: auto;
+}
+
+.div5-modal-close {
+    position: absolute;
+    left: 80%;
+    top: 15%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
