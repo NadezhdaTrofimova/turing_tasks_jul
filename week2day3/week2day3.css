@@ -13,3 +13,22 @@
     box-shadow: 0 0 2px 2px gray;
 }
 
+/****2.***/
+
+.div2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.div2-div {
+    height: 100px;
+    width: 100%;
+    background-color: yellow;
+    box-shadow: 0 0 2px 2px gray;
+    margin: 10px;
+}
+
+.div2-last {
+    flex-basis: 200%;
+}
