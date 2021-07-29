@@ -188,8 +188,8 @@
 }
 
 .div7-div {
-    width: 30px;
     height: 30px;
+    width: 100vh;
     background-color: cornflowerblue;
     box-shadow: 0 0 2px 2px blue;
 }
@@ -208,11 +208,52 @@
     }
 }
 
-.div7-checkbox:not(:checked) ~.div7-div {
-    height: 30px;
-    width: 100vmax;
-    background-color: cornflowerblue;
-    box-shadow: 0 0 2px 2px blue;
-}
 
 /*******8.*****/
+
+.div8 {
+    margin: 20px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.square8 {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 255, 0.51);
+    box-shadow: 0 0 2px 2px gray;
+    margin: 20px;
+}
+
+.circle8 {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: -15px;
+    top: -15px;
+    box-shadow: 0 0 1px 1px gray;
+    animation: square 10s linear infinite;
+}
+
+@keyframes square {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(200px);
+    }
+    50% {
+        transform: translate(200px, 200px);
+    }
+    75% {
+        transform: translate(0, 200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*******9.******/
