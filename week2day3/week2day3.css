@@ -9,7 +9,7 @@
 .div1-div {
     width: 100px;
     height: 100px;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.58);
     box-shadow: 0 0 2px 2px gray;
 }
 
@@ -24,11 +24,32 @@
 .div2-div {
     height: 100px;
     width: 100%;
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.63);
     box-shadow: 0 0 2px 2px gray;
     margin: 10px;
 }
 
 .div2-last {
     flex-basis: 200%;
+}
+
+/****3.****/
+
+
+.div3 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.div3-div {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.54);
+    box-shadow: 0 0 2px 2px gray;
+    margin: 10px;
+}
+
+.div3-middle {
+    flex-shrink: 1.3;
 }
