@@ -21,3 +21,9 @@ alert(Boolean(str));  // значение переменной false, так к�
 let firstNumber = Number(prompt('Enter first number'));
 let secondNumber = Number(prompt('Enter second number'));
 alert(`The sum of the numbers is ${firstNumber + secondNumber}`);
+
+// 5. Найдите остаток от деления введённых пользователем чисел a на b
+
+let divident = Number(prompt('Enter divident'));
+let divisor = Number(prompt('Enter divisor'));
+alert(`The remainder of division is ${divident % divisor}`);
