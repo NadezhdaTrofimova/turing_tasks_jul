@@ -89,3 +89,15 @@ alert (typeCheck(null)); // It's null
 alert (typeCheck(false)); // It's boolean
 
 
+/* 10. Перепишите условие
+	const  A = 201;
+	if (A % 2) {
+		alert(“A нечётное”);
+	} else {
+		alert(“A чётное”);
+	}
+с использованием тернарного оператора ?: */
+
+const A = 201;
+A % 2 ? alert('A нечетное') : alert ("A чётное")
+
