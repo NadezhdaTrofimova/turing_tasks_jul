@@ -15,3 +15,9 @@ let str = "";
 
 alert(Boolean(num)); // значение переменной true, так как данные типа number при приведении к логическому типу всегда принимают значение true, кроме 0 и -0.
 alert(Boolean(str));  // значение переменной false, так как пустая строка входит в список значений, которые при приведении к логическому типу дают ложное значение.
+
+// 4. Запросите у пользователя на вход два числа и выведите их сумму.
+
+let firstNumber = Number(prompt('Enter first number'));
+let secondNumber = Number(prompt('Enter second number'));
+alert(`The sum of the numbers is ${firstNumber + secondNumber}`);
