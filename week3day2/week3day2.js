@@ -50,3 +50,10 @@ const calculateTheQuotient = (number1, number2) => number1 / number2;
 // Проверка:
 console.log(calculateTheQuotient (5,7));  // 0.7142857142857143
 
+// 4. Реализуйте функцию, которая выводит в консоль сообщение “Здравствуйте, (name)”, где name - параметр функции. Сделайте так, чтобы параметром этой функции по-умолчанию было слово “гость”.
+
+const greetTheGuest = (name = "гость") => console.log(`Здравствуйте, ${name}`)
+
+// Проверка:
+greetTheGuest("Мария") // Здравствуйте, Мария
+greetTheGuest() // Здравствуйте, гость
