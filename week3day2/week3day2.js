@@ -70,3 +70,20 @@ const fibonacciRec = (n) => {
 }
 
 console.log(fibonacciRec(7)) // 13
+
+// 6. Перепишите реализацию функции из упражнения 5 с помощью циклов
+
+const fibonacciCycle = (n) => {
+    if (n === 0) {
+        return 0
+    } else {
+        let previous = 1;
+        let current = 1;
+        for (let i = 3; i <= n; i++) {
+            [current, previous] = [previous + current, current];
+        }
+        return current;
+    }
+}
+
+console.log(fibonacciCycle(7))  // 13
