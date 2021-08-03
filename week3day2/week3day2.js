@@ -57,3 +57,16 @@ const greetTheGuest = (name = "гость") => console.log(`Здравствуй
 // Проверка:
 greetTheGuest("Мария") // Здравствуйте, Мария
 greetTheGuest() // Здравствуйте, гость
+
+// 5. Реализуйте функцию, которая рекурсивно выводит n-е число в последовательности Фибоначчи.
+
+const fibonacciRec = (n) => {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacciRec(n - 1) + fibonacciRec(n - 2);
+    }
+    console.log(fibonacciRec);
+}
+
+console.log(fibonacciRec(7)) // 13
