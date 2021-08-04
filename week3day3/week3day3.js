@@ -36,16 +36,32 @@ for (let i = 1; i <= 20; i = i + 2) {
 
 // 4. Перепишите код из упражнения 1.1.10 таким образом, чтобы вместо группы условных инструкций использовался switch
 
-/* const A = 201;
+function checkType(value) {
+    switch (true) {
+        case typeof value === 'number':
+            alert("It's number");
+            break
+        case typeof value === 'string':
+            alert("It's string");
+            break
+        case value === null:
+            alert("It's null");
+            break
+        case typeof value === 'object':
+            alert("It's object");
+            break
+        case typeof value === 'boolean':
+            alert("It's boolean");
+            break
+    }
+}
 
-switch (A % 2) {
-    case 1:
-        alert('A нечётное');
-        break
-    case 0:
-        alert('A чётное');
-        break
-} */
+// Проверка:
+checkType(11);  // It's number
+checkType("Hello"); // It's string
+checkType({a: 1}); // It's object
+checkType(null); // It's null
+checkType(false); // It's boolean
 
 // 5. Поменяйте две переменные местами (это можно сделать воспользовавшись дополнительной переменной)
 
@@ -58,6 +74,7 @@ var1 = var2;
 var2 = varAdd;
 
 // Проверка:
-console.log(var1, var2);  // 2 1
+console.log(var1, var2); // 2 1
 
-// 6.
+// 6. Преобразуйте число 143.2343 к строке с точностью до 2 знака после запятой
+
