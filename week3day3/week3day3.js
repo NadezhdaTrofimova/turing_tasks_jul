@@ -82,4 +82,9 @@ let number6 = 143.2343;
 
 console.log(number6.toFixed(2)); // 143.23
 
-//7. 
+// 7. Округлите число 42.2654 до 1 знака после запятой
+
+let number7 = 42.2654;
+
+console.log(Number(number7.toFixed(1))); // 42.3
+
