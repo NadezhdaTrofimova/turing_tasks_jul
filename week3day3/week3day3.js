@@ -88,3 +88,7 @@ let number7 = 42.2654;
 
 console.log(Number(number7.toFixed(1))); // 42.3
 
+// 8. Найдите индекс первого вхождения строки “JavaScript” в строку “I learn JavaScript”
+
+console.log("I learn JavaScript".indexOf('JavaScript')); // 8
+
