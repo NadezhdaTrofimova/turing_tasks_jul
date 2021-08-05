@@ -101,10 +101,34 @@ function funcCount() {
     return ('Function called ' + count);
 }
 
-
 function funcCall() {
     let count = 0;
     return funcCount
 }
 
 funcCount()
+
+// 10. Реализуйте функцию, которая выводит свой текущий контекст в консоль. Вызовите её посредством call c разными значениями контекста
+
+
+function funcConsoleContext() {
+    console.log(this)
+}
+
+const varNew = 10;
+
+let user = {
+    name: 'name'
+}
+
+
+funcConsoleContext.call()
+funcConsoleContext.call(varNew)
+funcConsoleContext.call(user)
+
+
+
+
+
+
+
