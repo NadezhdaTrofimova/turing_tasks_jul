@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    grid-template: 7% 7% 21% 21% 14% 14% 14% / 100%;
+    width: 100%;
+    height: 1000px;
+}
+
+.header {
+    background-color: #0f1628;
+    grid-row: 1;
+}
+
+.menu {
+    background-color: #ec3f52;
+    grid-row: 2;
+}
+
+.hero {
+    background-color: #4f87c4;
+    grid-area: 3 / 1;
+}
+
+.main {
+    background-color: #25344a;
+    grid-area: 4 / 1;
+}
+
+.image {
+    background-color: #c2e4e6;
+    grid-area: 7 / 1;
+}
+
+.extra {
+    background-color: #52bc98;
+    grid-area: 6 / 1
+}
+
+.banner {
+    background-color: #fed071;
+    grid-area: 5 / 1;
+}
+
+.text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gautami, sans-serif;
+}
+
+
+.text1 {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Gautami, sans-serif;
+}
+
