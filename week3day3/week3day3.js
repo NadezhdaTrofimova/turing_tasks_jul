@@ -92,3 +92,19 @@ console.log(Number(number7.toFixed(1))); // 42.3
 
 console.log("I learn JavaScript".indexOf('JavaScript')); // 8
 
+// 9. Реализуйте функцию, которая возвращает функцию, выводящую количество собственных вызовов
+
+let count = 0;
+
+function funcCount() {
+    count++;
+    return ('Function called ' + count);
+}
+
+
+function funcCall() {
+    let count = 0;
+    return funcCount
+}
+
+funcCount()
