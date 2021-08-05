@@ -141,3 +141,16 @@ function funcNew(num) {
 }
 
 console.log(squarePow( (squarePow(5, funcNew)), funcNew)); // 625
+
+// 12. Реализуйте функцию curry (каррирование)
+
+
+function funcCurry (a) {
+    return (b) => {
+        return (c) => {
+            console.log(a + b + c);
+        };
+    };
+}
+
+funcCurry(2)(3)(4)
