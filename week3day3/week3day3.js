@@ -1,3 +1,5 @@
+// Упражнения. Часть 1.
+
 // 1. Увеличьте значение переменной a инициализированной 0 в цикле до 10 (на 1 каждую итерацию). Выполните задание трижды используя циклы while (...) { *…* }, do { *...* } while(...), for (...) { *...* } соответственно
 
 let a1 = 0;
@@ -95,18 +97,19 @@ console.log("I learn JavaScript".indexOf('JavaScript')); // 8
 // 9. Реализуйте функцию, которая возвращает функцию, выводящую количество собственных вызовов
 
 let count = 0;
-
 function funcCount() {
     count++;
     return ('Function called ' + count);
 }
 
 function funcCall() {
-    let count = 0;
-    return funcCount
+    return funcCount;
 }
 
-funcCount()
+funcCount();
+funcCount();
+funcCount();
+
 
 // 10. Реализуйте функцию, которая выводит свой текущий контекст в консоль. Вызовите её посредством call c разными значениями контекста
 
@@ -126,9 +129,15 @@ funcConsoleContext.call()
 funcConsoleContext.call(varNew)
 funcConsoleContext.call(user)
 
+// 11. Функция squarePow принимает 2 параметра: число и анонимную функцию, которая возводит число в квадрат. Возведите число в 4-тую степень с помощью squarePow.
 
 
+function squarePow(n, f) {
+    return f(n);
+}
 
+function funcNew(num) {
+    return Math.pow(num, 2)
+}
 
-
-
+console.log(squarePow( (squarePow(5, funcNew)), funcNew)); // 625
