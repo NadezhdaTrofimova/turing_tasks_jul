@@ -219,3 +219,15 @@ for (let i of array5) {
     console.log(i)
 }
 
+// 6. Реализуйте функцию-конструктор, создающую объект Animal с полями name и kind
+
+function Animal (name, kind) {
+    this.name = name;
+    this.kind = kind;
+}
+
+const newAnimal = new Animal ("vasya", 'cat');
+
+console.log(newAnimal);
+
+
