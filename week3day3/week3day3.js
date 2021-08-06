@@ -164,3 +164,22 @@ const object1 = {
 
 alert(object1['a']);
 alert(object1.a)
+
+/* 2. Создайте объект вида { a: 2, b: “Coding” }. Создайте копию этого объекта посредством
+    Метода Object.assign,
+    Spread-оператора
+    Выводите результаты в консоль  */
+
+const object2 = {
+    a: '2',
+    b: 'Coding'
+}
+
+const copy1Object2 = Object.assign({}, object2);
+console.log(copy1Object2);
+
+const copy2Object2 = {...object2}
+console.log(copy2Object2);
+
+//
+
