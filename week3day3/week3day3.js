@@ -193,3 +193,15 @@ console.log('b' in object3); // true
 
 delete object3.a;
 console.log('a' in object3); // false
+
+// 4. Создайте пустой объект и добавьте ему поля name и lastName со значениями “Иван” и “Иванов” соответственно. Также добавьте поле salary и запишите туда любое число. Переберите свойства объекта и выведите их в консоль с помощью цикла for (... in …).
+
+const object4 = {};
+
+object4.name = 'Иван';
+object4.lastName = 'Иванов';
+object4.salary = '2000$';
+
+for (let key in object4) {
+    console.log(key + ": " + object4[key])
+}
