@@ -236,4 +236,12 @@ let sortStr = (str7) => str7.split('').sort().join('');
 
 console.log(sortStr('vnjsgbjk')) // bgjjknsv
 
+// 8. Реализуйте функцию, которая сортирует передаваемый в неё массив чисел
 
+function sortNumber(array8) {
+    return array8.sort(function (a, b) {
+    return a - b
+    })
+}
+
+sortNumber([2, 1, 10])
