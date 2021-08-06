@@ -140,13 +140,16 @@ console.log(squarePow(5, (num) => num * num))
 
 // 12. Реализуйте функцию curry (каррирование)
 
-
 function funcCurry (a) {
-    return (b) => {
-        return (c) => {
-            console.log(a + b + c);
+    return function (b)  {
+        return function (c)  {
+            return (a + b + c);
         };
     };
 }
 
-funcCurry(2)(3)(4)
+console.log(funcCurry(2)(3)(4))
+
+
+
+// Упражнения. Часть 2.
