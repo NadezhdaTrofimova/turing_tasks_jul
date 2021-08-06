@@ -244,4 +244,12 @@ function sortNumber(array8) {
     })
 }
 
-sortNumber([2, 1, 10])
+sortNumber([2, 1, 10, 203, -1]) // [-1, 1, 2, 10, 203]
+
+// 9. Реализуйте функцию, которая находит и возвращает индекс элемента в массиве
+
+function indexArrElem(array9, value9) {
+    return array9.indexOf(value9)
+}
+
+indexArrElem([1, 2, 3, 4, 5, 8, 9], 4)  // 3
