@@ -230,4 +230,10 @@ const newAnimal = new Animal ("vasya", 'cat');
 
 console.log(newAnimal);
 
+// 7. Реализуйте функцию сортирующую символы в строке и возвращающую отсортированную строку
+
+let sortStr = (str7) => str7.split('').sort().join('');
+
+console.log(sortStr('vnjsgbjk')) // bgjjknsv
+
 
