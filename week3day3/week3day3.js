@@ -132,15 +132,11 @@ funcConsoleContext.call(user)
 // 11. Функция squarePow принимает 2 параметра: число и анонимную функцию, которая возводит число в квадрат. Возведите число в 4-тую степень с помощью squarePow.
 
 
-function squarePow(n, f) {
-    return f(n);
+const squarePow = (number, callback) => {
+    return callback(callback(number))
 }
 
-function funcNew(num) {
-    return Math.pow(num, 2)
-}
-
-console.log(squarePow( (squarePow(5, funcNew)), funcNew)); // 625
+console.log(squarePow(5, (num) => num * num))
 
 // 12. Реализуйте функцию curry (каррирование)
 
