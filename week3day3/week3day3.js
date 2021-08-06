@@ -181,5 +181,15 @@ console.log(copy1Object2);
 const copy2Object2 = {...object2}
 console.log(copy2Object2);
 
-//
+// 3. Создайте объект вида { a: 4 }. Добавьте ему поле b содержащее число 5 и удалите поле a. На каждом этапе проверяйте наличие полей в объекте. Результаты выводите в консоль
 
+const object3 = {
+    a: 4
+}
+
+object3.b = 5;
+console.log('b' in object3); // true
+
+
+delete object3.a;
+console.log('a' in object3); // false
