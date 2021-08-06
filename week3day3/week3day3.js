@@ -205,3 +205,17 @@ object4.salary = '2000$';
 for (let key in object4) {
     console.log(key + ": " + object4[key])
 }
+
+// 5. Создайте массив чисел от 0 до 10 и выведите его в консоль двумя разными способами: посредством цикла for..in и цикла for..of
+
+const array5 = [0, 1, 2, 3, 4, 5, 6,  7, 8, 9, 10];
+
+for (let i in array5) {
+    console.log(array5[i])
+}
+
+
+for (let i of array5) {
+    console.log(i)
+}
+
