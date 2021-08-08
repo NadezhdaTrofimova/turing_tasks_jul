@@ -378,3 +378,13 @@ let b = 2;
 [a, b] = [b, a];
 
 console.log(a, b); // 2 1
+
+// 20. Отсортируйте массив чисел по возрастанию используя метод sort
+
+const array20 = [10, 1, 2, 101, 90, 9];
+
+array20.sort(function (a, b) {return a - b})
+
+console.log(array20); // [1, 2, 9, 10, 90, 101]
+
+// 21.
