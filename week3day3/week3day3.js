@@ -291,3 +291,9 @@ obj12 = {
 }
 
 console.log(funcClone(obj12))  // {1: "one", 2: "two"}
+
+// 13. Напишите функцию в одну строчку, которая вычисляет сумму всех чисел в массиве
+
+const funcSum = (array13) => array13.reduce((a, b) => a + b)
+
+console.log(funcSum([90, 30, 60, 15, 15])) // 210
