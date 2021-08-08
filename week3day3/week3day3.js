@@ -396,3 +396,25 @@ const addNewElem = (array, elem) => {
 }
 
 addNewElem([1, 2, 3, 4], 5); // [1, 2, 3, 4, 5]
+
+// 22. Напишите функции, реализующие поверхностное клонирование массива и объекта
+
+
+// Массив:
+
+const cloneArr = (array) => {
+    let arrCopy = array.slice()
+    return arrCopy;
+}
+
+console.log(cloneArr([[1, 2, 3], [4, 5]]))
+
+
+// Объект:
+
+const cloneObj = (obj) => {
+    let objCopy = Object.assign({}, obj)
+    return objCopy;
+}
+
+console.log(cloneObj({ x: {z: 3}, y: 2 }))
