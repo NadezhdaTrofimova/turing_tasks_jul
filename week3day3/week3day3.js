@@ -346,3 +346,18 @@ mergeArray(array15) // [1, 2, 3, "cat", "dog", 56, 23, 28, 57]
     [] == [] // false
     {} === {}  // false
 Проверьте свои догадки       */
+
+
+// 17. Используя деструктурирующее присваивание создать на основе объекта { firstName: “Иван”, lastName: “Иванов”,  years: 25 } переменные с названиями name и age, в который записать данные из полей firstName и years
+
+const object17 = {
+      firstName: "Иван",
+      lastName: "Иванов",
+      years: 25
+}
+
+
+let { firstName: name, years: age} = object17;
+
+console.log(name, age); // Иван 25
+
