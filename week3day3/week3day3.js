@@ -278,3 +278,16 @@ function getMonth(inpLang, numMonth) {
 
 console.log(getMonth('ru', 10)) // Октябрь
 console.log(getMonth('en', 1)) // January
+
+// 12. Реализуйте функцию, которая позволяет полностью клонировать объект
+
+const funcClone = (sourceObj) => {
+    return cloneObj = {...sourceObj}
+}
+
+obj12 = {
+    1: 'one',
+    2: 'two'
+}
+
+console.log(funcClone(obj12))  // {1: "one", 2: "two"}
