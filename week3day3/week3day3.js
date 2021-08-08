@@ -387,4 +387,12 @@ array20.sort(function (a, b) {return a - b})
 
 console.log(array20); // [1, 2, 9, 10, 90, 101]
 
-// 21.
+// 21. Напишите функцию добавления в массив нового элемента по индексу предыдущего элемента.
+
+const addNewElem = (array, elem) => {
+    let index = array.length;
+    array[index] = elem;
+    return array;
+}
+
+addNewElem([1, 2, 3, 4], 5); // [1, 2, 3, 4, 5]
