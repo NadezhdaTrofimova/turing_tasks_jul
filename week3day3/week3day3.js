@@ -418,3 +418,12 @@ const cloneObj = (obj) => {
 }
 
 console.log(cloneObj({ x: {z: 3}, y: 2 }))
+
+// 23. Даны два массива: ['a', 'b', 'c'] и [1, 2, 3]. Объедините их вместе.
+
+const arr1 = ['a', 'b', 'c'];
+const arr2 = [1, 2, 3];
+
+const newArr = arr1.concat(arr2)
+
+console.log(newArr); // ["a", "b", "c", 1, 2, 3]
