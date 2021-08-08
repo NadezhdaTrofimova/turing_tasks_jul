@@ -311,3 +311,27 @@ let numberRu = new Number("один", "два", "три");
 
 console.log(numberRu);
 
+// 15. Реализуйте функцию, которая объединяет все массивы, являющиеся частью другого массива в один массив
+
+
+const mergeArray = (array) => {
+    newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        for (let y = 0; y < array[i].length; y++) {
+            newArray.push(array[i][y])
+        }
+    }
+    return newArray;
+}
+
+
+// Проверка:
+const array15 = [
+    [1, 2, 3],
+    ['cat', 'dog'],
+    [56, 23, 28, 57]
+]
+
+console.log(mergeArray(array15)) // [1, 2, 3, "cat", "dog", 56, 23, 28, 57]
+
+//
