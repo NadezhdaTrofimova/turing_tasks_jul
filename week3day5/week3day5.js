@@ -21,12 +21,15 @@ div2.className = 'div-2a';
 div2.classList.add('div-2b');
 div2.id = 'div-2c';
 
-div2.style.width = '200px';
-div2.style.height = '300px';
-div2.style.background = 'red';
 document.body.appendChild(div2);
 
-console.log(div2);
+// 3. Создайте div с заданной шириной и измените ему стили используя свойство style. Чем этот способ отличается от стилизации с помощью установки классов и id?
 
+let div3 = document.createElement('div');
 
+div3.style.width = '200px';
+div3.style.height = '300px';
+div3.style.background = 'red';
+
+document.body.appendChild(div3);
 
