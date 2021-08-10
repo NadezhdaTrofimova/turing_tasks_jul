@@ -13,3 +13,17 @@ const consoleObject = (object) => {
 }
 
 consoleObject(obj1);
+
+// 2. Реализуйте функцию, которая принимает объект и выводит на экран все собственные свойства объекта
+
+
+const displayObject = (object) => alert(Object.keys(object))
+
+
+obj2 = {
+    a: 1,
+    b: 2,
+    c: 3
+}
+
+displayObject(obj2); // a,b,c
