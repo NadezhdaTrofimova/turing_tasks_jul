@@ -58,3 +58,13 @@ arrMap4 = map4.keys()
 for (let key of arrMap4) {
     console.log(key)
 }
+
+// 5. Создайте пустую коллекцию Set. С помощью метода add добавьте в нее элементы со значениями 1, 2 и 3.
+
+let set5 = new Set;
+
+set5.add(1);
+set5.add(2);
+set5.add(3);
+
+console.log(set5)
