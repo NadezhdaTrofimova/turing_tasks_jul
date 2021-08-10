@@ -51,3 +51,11 @@ for (let i = 1; i < 11; i = i + 2) {
 }
 
 console.log(spanSpan4)
+
+// 5. Реализуйте функцию, которая в качестве параметра принимает id инпута и возвращает значение в этом input’е
+
+function getValueInput(idInput) {
+    return document.getElementById(idInput).value;
+}
+
+console.log(getValueInput('input5'));
