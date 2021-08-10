@@ -27,3 +27,18 @@ obj2 = {
 }
 
 displayObject(obj2); // a,b,c
+
+
+// 3. Пусть даны 3 массива. Создайте коллекцию Map, сделайте ключами коллекции эти массивы, а значениями - какие-нибудь строки.
+
+arrA = [1, 2, 6, 8, 9, 167];
+arrB = [1, 2, 6, 8, 9, 167];
+arrC = [1, 2, 6, 8, 9, 167];
+
+let map3 = new Map;
+
+map3.set(arrA, 'str1');
+map3.set(arrB, 'str2');
+map3.set(arrC, 'str3');
+
+console.log(map3)
