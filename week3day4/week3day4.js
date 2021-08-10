@@ -35,7 +35,7 @@ arrA = [1, 2, 6, 8, 9, 167];
 arrB = [1, 2, 6, 8, 9, 167];
 arrC = [1, 2, 6, 8, 9, 167];
 
-let map3 = new Map;
+let map3 = new Map();
 
 map3.set(arrA, 'str1');
 map3.set(arrB, 'str2');
@@ -45,7 +45,7 @@ console.log(map3)
 
 // 4. Пусть дана коллекция Map. С помощью метода keys получите массив ее ключей и переберите его циклом for-of.
 
-let map4 = new Map;
+let map4 = new Map();
 
 map4.set(1, "a");
 map4.set(2, "b");
@@ -61,7 +61,7 @@ for (let key of arrMap4) {
 
 // 5. Создайте пустую коллекцию Set. С помощью метода add добавьте в нее элементы со значениями 1, 2 и 3.
 
-let set5 = new Set;
+let set5 = new Set();
 
 set5.add(1);
 set5.add(2);
@@ -75,3 +75,15 @@ let set6 = new Set([1, 2, 3]);
 
 console.log(set6.has(3)); // true
 console.log(set6.has(4)); // false
+
+// 7. Пусть дан массив. С помощью Set получите этот же массив, но без дублирующихся элементов
+
+arr7 = [1, 2, 3, 3, 3, 4, 5, 1];
+
+console.log(Array.from(new Set(arr7))); // [1, 2, 3, 4, 5]
+
+
+
+
+
+
