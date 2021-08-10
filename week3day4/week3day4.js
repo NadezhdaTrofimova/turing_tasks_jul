@@ -42,3 +42,19 @@ map3.set(arrB, 'str2');
 map3.set(arrC, 'str3');
 
 console.log(map3)
+
+// 4. Пусть дана коллекция Map. С помощью метода keys получите массив ее ключей и переберите его циклом for-of.
+
+let map4 = new Map;
+
+map4.set(1, "a");
+map4.set(2, "b");
+map4.set(3, "c");
+map4.set(4, "d");
+map4.set(5, "e");
+
+arrMap4 = map4.keys()
+
+for (let key of arrMap4) {
+    console.log(key)
+}
