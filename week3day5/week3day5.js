@@ -33,3 +33,21 @@ div3.style.background = 'red';
 
 document.body.appendChild(div3);
 
+// 4. Создайте список из 10 элементов и в JavaScript коде измените стиль каждого второго элемента таким образом, чтобы текст элемента стал жирным, а цвет фона серым
+
+for (let i = 0; i < 10; i++) {
+    let span4 = document.createElement('span');
+    document.body.appendChild(span4);
+    span4.classList.add('span-4');
+    span4.textContent = " text ";
+}
+
+let spanSpan4 = document.querySelectorAll('.span-4')
+
+
+for (let i = 1; i < 11; i = i + 2) {
+    spanSpan4[i].style.fontWeight = 'bold';
+    spanSpan4[i].style.background = 'gray';
+}
+
+console.log(spanSpan4)
