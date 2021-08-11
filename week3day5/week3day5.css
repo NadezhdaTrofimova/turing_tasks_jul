@@ -14,3 +14,14 @@
 #div-2c {
     background-color: green;
 }
+
+
+/*9. Дан элемент. Найдите его первого потомка и сделайте его текст красного цвета.*/
+
+.div9-child {
+    height: 40px;
+    width: 100px;
+    background-color: #0f1628;
+    margin: 10px;
+    color: white;
+}

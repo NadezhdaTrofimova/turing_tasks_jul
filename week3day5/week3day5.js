@@ -15,6 +15,7 @@ console.log(element1, element2, element3, element4);
 // Используйте свойство classList
 // Установив id элемента
 
+
 let div2 = document.createElement('div');
 
 div2.className = 'div-2a';
@@ -39,7 +40,7 @@ for (let i = 0; i < 10; i++) {
     let span4 = document.createElement('span');
     document.body.appendChild(span4);
     span4.classList.add('span-4');
-    span4.textContent = " text ";
+    span4.textContent = " 4 text ";
 }
 
 let spanSpan4 = document.querySelectorAll('.span-4')
@@ -76,8 +77,8 @@ let span7_1 = document.createElement('span');
 let span7_2 = document.createElement('span');
 div7.appendChild(span7_1);
 div7.appendChild(span7_2);
-span7_1.textContent = " Первый ";
-span7_2.textContent = " Второй ";
+span7_1.textContent = " 7 Первый ";
+span7_2.textContent = " 7 Второй ";
 
 // 8. Реализуйте функцию, которая в качестве параметров принимает id элемента и строку, которую устанавливает в качестве текста в этом элементе. Для реализации используйте:
 // Свойство элемента textContent
@@ -88,11 +89,21 @@ function setText1(id, string) {
     elem.textContent = string;
 }
 
-setText1('div8-a', 'просто строка')
+setText1('div8-a', '8 просто строка')
 
 function setText2(id, string) {
     let elem = document.getElementById(id);
     elem.innerHTML = string;
 }
 
-setText2('div8-b', 'и другая строка')
+setText2('div8-b', '8 и другая строка')
+
+// 9. Дан элемент. Найдите его первого потомка и сделайте его текст красного цвета.
+
+let elem9 = document.querySelector('.div9')
+let childElem9 = elem9.firstElementChild;
+
+childElem9.style.color = "#fa0000";
+
+console.log(elem9);
+console.log(childElem9);
