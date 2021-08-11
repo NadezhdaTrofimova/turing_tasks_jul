@@ -119,3 +119,15 @@ elem10Third.append('!!!');
 console.log(elem10First);
 console.log(elem10Second);
 console.log(elem10Third);
+
+// Упражнения. Часть 2.
+
+// 1. Создайте кнопку счётчик-кликов.
+
+let count = 0;
+function clicker() {
+    count +=1;
+    document.querySelector('.button1').innerHTML = count;
+}
+
+// 2.
