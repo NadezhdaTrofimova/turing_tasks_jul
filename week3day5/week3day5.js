@@ -76,5 +76,23 @@ let span7_1 = document.createElement('span');
 let span7_2 = document.createElement('span');
 div7.appendChild(span7_1);
 div7.appendChild(span7_2);
-span7_1.textContent = " Первый  ";
+span7_1.textContent = " Первый ";
 span7_2.textContent = " Второй ";
+
+// 8. Реализуйте функцию, которая в качестве параметров принимает id элемента и строку, которую устанавливает в качестве текста в этом элементе. Для реализации используйте:
+// Свойство элемента textContent
+// Свойство элемента innerHTML
+
+function setText1(id, string) {
+    let elem = document.getElementById(id);
+    elem.textContent = string;
+}
+
+setText1('div8-a', 'просто строка')
+
+function setText2(id, string) {
+    let elem = document.getElementById(id);
+    elem.innerHTML = string;
+}
+
+setText2('div8-b', 'и другая строка')
