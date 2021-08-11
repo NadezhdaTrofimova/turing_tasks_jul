@@ -189,3 +189,13 @@ const button7 = document.querySelector('.button7');
 
 button7.addEventListener('click', () => button7.remove())
 
+// 8. Создайте список ol с несколькими элементами li. По нажатию на каждый элемент списка этот элемент должен удаляться
+
+const ol8 = document.querySelector('.ol8');
+
+ol8.addEventListener('click', event => {
+    if (event.target.tagName = 'li') {
+        event.target.remove();
+    }
+})
+

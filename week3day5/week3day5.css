@@ -89,3 +89,9 @@
     border: 3px solid fuchsia;
     box-shadow: 0 0 2px 2px fuchsia;
 }
+
+.ol8 > li {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+}
