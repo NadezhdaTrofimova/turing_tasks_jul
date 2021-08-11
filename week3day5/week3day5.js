@@ -107,3 +107,15 @@ childElem9.style.color = "#fa0000";
 
 console.log(elem9);
 console.log(childElem9);
+
+// 10. Дано три элемента. Найдите для первого элемента соседа снизу его соседа снизу (следующий элемент за соседним) и добавьте ему в конец текст '!!!'.
+
+let elem10First = document.querySelector('.div10');
+let elem10Second = elem10First.nextElementSibling;
+let elem10Third = elem10Second.nextElementSibling;
+
+elem10Third.append('!!!');
+
+console.log(elem10First);
+console.log(elem10Second);
+console.log(elem10Third);
