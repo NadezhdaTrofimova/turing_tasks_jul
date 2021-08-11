@@ -183,3 +183,9 @@ form6.addEventListener('focusout', event => {
     form6.classList.remove('focusinput');
 })
 
+// 7. Создайте кнопку, которая удаляет себя со страницы по нажатию на неё
+
+const button7 = document.querySelector('.button7');
+
+button7.addEventListener('click', () => button7.remove())
+
