@@ -139,3 +139,15 @@ table.onclick = function(event) {
     let value = cell.innerHTML;
     cell.innerHTML = value * value
 };
+
+
+// 4. Сделайте таблицу 5x5. Используя делегирование событий окрашивать красным цветом фон той ячейки, над которой в данный момент зависает курсор
+
+
+table4 = document.querySelector('.table4')
+
+table4.addEventListener('mouseover', event => {
+    if (event.target.className === 'td3') {
+        event.target.style.background = "#ff0000";
+    }
+})
