@@ -18,6 +18,10 @@
 
 /*9. Дан элемент. Найдите его первого потомка и сделайте его текст красного цвета.*/
 
+.div9 {
+    display: flex;
+}
+
 .div9-child {
     height: 40px;
     width: 100px;
@@ -34,4 +38,21 @@
     background-color: #789846;
     margin: 2px;
     color: #000000;
+}
+
+/* Упражнения. Часть 2.*/
+
+/*2. Напишите “длинную страницу”, которая отображает на экране текущую длину прокрутки*/
+
+.div2 {
+    background: yellow;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 2px 2px gray;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

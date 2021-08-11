@@ -130,4 +130,3 @@ function clicker() {
     document.querySelector('.button1').innerHTML = count;
 }
 
-// 2.
