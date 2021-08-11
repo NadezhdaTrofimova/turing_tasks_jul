@@ -59,3 +59,11 @@ function getValueInput(idInput) {
 }
 
 console.log(getValueInput('input5'));
+
+// 6. Реализуйте функцию, которая делает input с переданным в неё классом неактивным
+
+function inactiveInput(classInput) {
+    document.querySelector(classInput).disabled = true;
+}
+
+inactiveInput(".input6");
