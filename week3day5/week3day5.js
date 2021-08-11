@@ -130,3 +130,12 @@ function clicker() {
     document.querySelector('.button1').innerHTML = count;
 }
 
+// 3. Дата таблица с числами. По нажатию на ячейку в неё должен заноситься квадрат числа, которое она содержит
+
+table = document.querySelector('.table3')
+
+table.onclick = function(event) {
+    let cell = (event.target);
+    let value = cell.innerHTML;
+    cell.innerHTML = value * value
+};
