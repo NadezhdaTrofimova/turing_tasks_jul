@@ -74,5 +74,18 @@
     font-weight: bold;
 }
 
-/* 4. Сделайте таблицу 5x5. Используя делегирование событий окрашивать красным цветом фон той ячейки, над которой в данный момент зависает курсор*/
+/*6. Реализовать делегирование события фокус от элемента формы к инпутам: при фокусе граница инпута должна менять цвет и ширину */
 
+.form6 {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.focusinput {
+    border: 3px solid fuchsia;
+    box-shadow: 0 0 2px 2px fuchsia;
+}

@@ -156,6 +156,7 @@ table4.addEventListener('mouseover', event => {
 // 5. Сделать простейшую валидацию: создать инпут, при расфокусе которого будет проверяться соответствие value input’а какой-либо строке
 
 
+
 const input2 = document.querySelector('#input2');
 
 input2.addEventListener('focusout', () => {
@@ -163,5 +164,22 @@ input2.addEventListener('focusout', () => {
         alert ("Неверный e-mail");
         input2.value = '';
     }
+})
+
+
+// 6. Реализовать делегирование события фокус от элемента формы к инпутам: при фокусе граница инпута должна менять цвет и ширину
+
+
+const form6 = document.querySelector('.form6')
+
+
+form6.addEventListener('focusin', event => {
+    event.target.classList.add('focusinput');
+    form6.classList.add('focusinput');
+})
+
+form6.addEventListener('focusout', event => {
+    event.target.classList.remove('focusinput');
+    form6.classList.remove('focusinput');
 })
 
