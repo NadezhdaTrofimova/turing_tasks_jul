@@ -67,3 +67,14 @@ function inactiveInput(classInput) {
 }
 
 inactiveInput(".input6");
+
+// 7. Добавьте элементу div в качестве потомков два элемента span с произвольным текстовым содержимым
+
+let div7 = document.querySelector('.div7');
+
+let span7_1 = document.createElement('span');
+let span7_2 = document.createElement('span');
+div7.appendChild(span7_1);
+div7.appendChild(span7_2);
+span7_1.textContent = " Первый  ";
+span7_2.textContent = " Второй ";
