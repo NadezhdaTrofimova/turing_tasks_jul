@@ -151,3 +151,17 @@ table4.addEventListener('mouseover', event => {
         event.target.style.background = "#ff0000";
     }
 })
+
+
+// 5. Сделать простейшую валидацию: создать инпут, при расфокусе которого будет проверяться соответствие value input’а какой-либо строке
+
+
+const input2 = document.querySelector('#input2');
+
+input2.addEventListener('focusout', () => {
+    if (input2.value.indexOf('@') === -1) {
+        alert ("Неверный e-mail");
+        input2.value = '';
+    }
+})
+
