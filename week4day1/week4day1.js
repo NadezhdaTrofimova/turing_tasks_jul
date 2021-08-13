@@ -187,8 +187,7 @@ class ChangeStringClass {
             if (stringSplit[i] !== ' ')
                 counter++
         }
-        this.input3 = counter;
-        return (this.input3)
+        return counter
     }
 
 }
@@ -203,9 +202,17 @@ console.log(String2.doStringWithoutSpaces());
 
 // 5. Наследуйте от класса Employee новый класс AccountingEmployee обладающий методом work, который выводит в консоль сообщение о том, что рабочий приступил к выполнению обязанностей. Создайте объект этого класса и используйте его метод
 
-// class EmployeeClass {
-//     constructor() {
-//         this.name = name;
-//     }
-//     work()
-// }
+class EmployeeClass {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+class AccountingEmployeeClass extends EmployeeClass {
+    work() {
+        console.log(`${this.name} приступил к выполнению обязанностей`);
+    }
+}
+
+const Employee5 = new AccountingEmployeeClass("Тарас");
+Employee5.work()
