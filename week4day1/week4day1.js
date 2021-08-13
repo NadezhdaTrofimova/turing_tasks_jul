@@ -58,9 +58,9 @@ console.log(thirdEmployee.salaryPerHour);  // 650
 console.log(thirdEmployee.hours);  //120
 
 // 3. Реализуйте класс, который валидирует числа и имеет набор методов для проверки следующего
+
+
 // a.Является ли число чётным
-// b.Является ли число целым или числом с плавающей точкой
-// c.Является ли число положительным или отрицательным
 
 class Evennumber {
     constructor(input) {
@@ -89,6 +89,8 @@ const numberOdd2 = new Evennumber(26)
 numberOdd1.consoleInput()
 numberOdd2.consoleInput()
 
+// b.Является ли число целым или числом с плавающей точкой
+
 class Integernumber {
     constructor(input1) {
         this.input1 = input1;
@@ -115,6 +117,8 @@ const numberOdd4 = new Integernumber(1.55)
 numberOdd3.consoleInput1()
 numberOdd4.consoleInput1()
 
+
+// c.Является ли число положительным или отрицательным
 
 class Positivenumber {
     constructor(input2) {
@@ -145,3 +149,84 @@ const numberOdd7 = new Positivenumber(0)
 numberOdd5.consoleInput2()
 numberOdd6.consoleInput2()
 numberOdd7.consoleInput2()
+
+// 4. Реализуйте класс, который принимает на вход некоторую строку и имеет следующий набор методов:
+
+
+// a. Делает все первые буквы слов заглавными
+
+class ToCapitalFirstLetterClass {
+    constructor(input3) {
+        this.input3 = input3;
+    }
+
+    set input3(value) {
+        let arraySplit = value.split(' ');
+        let newArray = [];
+        for (let i = 0; i < arraySplit.length; i++) {
+            newArray.push((arraySplit[i].charAt(0).toUpperCase()) + arraySplit[i].slice(1));
+        }
+        this._input3 = newArray.join(' ');
+    }
+    get input3() {
+        console.log(this._input3);
+    }
+
+}
+
+const String = new ToCapitalFirstLetterClass("меня зовут иван иванов")
+
+String.input3
+
+// b. Делает все первые буквы слов маленькими
+
+class ToLowerFirstLetterClass {
+    constructor(input4) {
+        this.input4 = input4;
+    }
+
+    set input4(value) {
+        let arraySplit = value.split(' ');
+        let newArray = [];
+        for (let i = 0; i < arraySplit.length; i++) {
+            newArray.push((arraySplit[i].charAt(0).toLowerCase()) + arraySplit[i].slice(1));
+        }
+        this._input4 = newArray.join(' ');
+    }
+    get input4() {
+        console.log(this._input4);
+    }
+
+}
+
+const String1 = new ToLowerFirstLetterClass("МЕНЯ ЗОВУТ ПЕТЯ ПЕТРОВ")
+
+String1.input4
+
+
+// c. Возвращает количество символов в строке, не являющихся пробельными
+
+class StringWithoutSpacesClass {
+    constructor(input5) {
+        this.input5 = input5;
+    }
+
+    set input5(value) {
+        let stringSplit = value.split('');
+        let counter = 0;
+        for (let i = 0; i < stringSplit.length; i++) {
+            if (stringSplit[i] !== ' ')
+                counter++
+        }
+        this._input5 = counter;
+    }
+    get input5() {
+        console.log(this._input5);
+    }
+
+}
+
+const String2 = new StringWithoutSpacesClass("Ай яй яй")
+
+String2.input5
+
