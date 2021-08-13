@@ -151,82 +151,61 @@ numberOdd6.consoleInput2()
 numberOdd7.consoleInput2()
 
 // 4. Реализуйте класс, который принимает на вход некоторую строку и имеет следующий набор методов:
-
-
 // a. Делает все первые буквы слов заглавными
+// b. Делает все первые буквы слов маленькими
+// c. Возвращает количество символов в строке, не являющихся пробельными
 
-class ToCapitalFirstLetterClass {
+class ChangeStringClass {
     constructor(input3) {
         this.input3 = input3;
     }
 
-    set input3(value) {
-        let arraySplit = value.split(' ');
+    doCapitalFirstLetter() {
+        let arraySplit = this.input3.split(' ');
         let newArray = [];
         for (let i = 0; i < arraySplit.length; i++) {
             newArray.push((arraySplit[i].charAt(0).toUpperCase()) + arraySplit[i].slice(1));
+            }
+        this.input3 = newArray.join(' ');
+        return (this.input3)
         }
-        this._input3 = newArray.join(' ');
-    }
-    get input3() {
-        console.log(this._input3);
-    }
 
-}
-
-const String = new ToCapitalFirstLetterClass("меня зовут иван иванов")
-
-String.input3
-
-// b. Делает все первые буквы слов маленькими
-
-class ToLowerFirstLetterClass {
-    constructor(input4) {
-        this.input4 = input4;
-    }
-
-    set input4(value) {
-        let arraySplit = value.split(' ');
+    doLowerFirstLetter() {
+        let arraySplit = this.input3.split(' ');
         let newArray = [];
         for (let i = 0; i < arraySplit.length; i++) {
             newArray.push((arraySplit[i].charAt(0).toLowerCase()) + arraySplit[i].slice(1));
         }
-        this._input4 = newArray.join(' ');
-    }
-    get input4() {
-        console.log(this._input4);
+        this.input3 = newArray.join(' ');
+        return (this.input3)
     }
 
-}
-
-const String1 = new ToLowerFirstLetterClass("МЕНЯ ЗОВУТ ПЕТЯ ПЕТРОВ")
-
-String1.input4
-
-
-// c. Возвращает количество символов в строке, не являющихся пробельными
-
-class StringWithoutSpacesClass {
-    constructor(input5) {
-        this.input5 = input5;
-    }
-
-    set input5(value) {
-        let stringSplit = value.split('');
+    doStringWithoutSpaces() {
+        let stringSplit = this.input3.split('');
         let counter = 0;
         for (let i = 0; i < stringSplit.length; i++) {
             if (stringSplit[i] !== ' ')
                 counter++
         }
-        this._input5 = counter;
-    }
-    get input5() {
-        console.log(this._input5);
+        this.input3 = counter;
+        return (this.input3)
     }
 
 }
 
-const String2 = new StringWithoutSpacesClass("Ай яй яй")
+const String = new ChangeStringClass("меня зовут иван иванов")
+const String1 = new ChangeStringClass("МЕНЯ ЗОВУТ ПЕТЯ ПЕТРОВ")
+const String2 = new ChangeStringClass("Ай яй яй")
+console.log(String.doCapitalFirstLetter());
+console.log(String1.doLowerFirstLetter());
+console.log(String2.doStringWithoutSpaces());
 
-String2.input5
 
+// 5. Наследуйте от класса Employee новый класс AccountingEmployee обладающий методом work, который выводит в консоль сообщение о том, что рабочий приступил к выполнению обязанностей. Создайте объект этого класса и используйте его метод
+
+// class EmployeeClass {
+//     constructor() {
+//         this.name = name;
+//     }
+//     work()
+// }
