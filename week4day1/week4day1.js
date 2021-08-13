@@ -57,3 +57,91 @@ console.log(thirdEmployee.age);  // 35
 console.log(thirdEmployee.salaryPerHour);  // 650
 console.log(thirdEmployee.hours);  //120
 
+// 3. Реализуйте класс, который валидирует числа и имеет набор методов для проверки следующего
+// a.Является ли число чётным
+// b.Является ли число целым или числом с плавающей точкой
+// c.Является ли число положительным или отрицательным
+
+class Evennumber {
+    constructor(input) {
+        this.input = input;
+    }
+    set input(value) {
+        if (value % 2 === 0) {
+            this._input = value;
+        } else {
+            console.log(`${value} is odd number!`);
+        }
+    }
+
+    get input() {
+        return this._input;
+    }
+
+    consoleInput() {
+        console.log(`You entered ${this.input}`)
+    }
+}
+
+const numberOdd1 = new Evennumber(25)
+const numberOdd2 = new Evennumber(26)
+
+numberOdd1.consoleInput()
+numberOdd2.consoleInput()
+
+class Integernumber {
+    constructor(input1) {
+        this.input1 = input1;
+    }
+    set input1(value) {
+        if (Number.isInteger(value) === false) {
+            console.log('Number is float!');
+        } else {
+            return this._input1 = value
+        }
+    }
+    get input1() {
+        return this._input1;
+    }
+
+    consoleInput1() {
+        console.log(`${this.input1} is integer`)
+    }
+}
+
+const numberOdd3 = new Integernumber(7)
+const numberOdd4 = new Integernumber(1.55)
+
+numberOdd3.consoleInput1()
+numberOdd4.consoleInput1()
+
+
+class Positivenumber {
+    constructor(input2) {
+        this.input2 = input2;
+    }
+    set input2(value) {
+        if (value === 0) {
+            console.log('You entered 0');
+        } else if (value < 0) {
+            console.log('You entered negative number');
+        } else {
+            return this._input2 = value;
+        }
+    }
+    get input2() {
+        return this._input2;
+    }
+
+    consoleInput2() {
+        console.log(`${this.input2} is positive number`)
+    }
+}
+
+const numberOdd5 = new Positivenumber(5)
+const numberOdd6 = new Positivenumber(-5)
+const numberOdd7 = new Positivenumber(0)
+
+numberOdd5.consoleInput2()
+numberOdd6.consoleInput2()
+numberOdd7.consoleInput2()
