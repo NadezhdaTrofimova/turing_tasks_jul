@@ -216,3 +216,72 @@ class AccountingEmployeeClass extends EmployeeClass {
 
 const Employee5 = new AccountingEmployeeClass("Тарас");
 Employee5.work()
+
+// 6. Реализуйте класс для работы с элементами DOM, который принимает в конструктор селектор и обладает следующими методами, которые можно вызывать по цепочке:
+// Изменение текстового содержимого узла
+// Изменение html содержимого узла
+// Добавление нового узла в качестве потомка
+// Добавление к началу текстового содержимого узла строки
+// Добавление к концу текстового содержимого узла строки
+// Изменение атрибутов элемента
+// Удаление самого элемента
+// Получение потомка узла посредством селектора
+
+class InteractionDOMelement {
+    constructor(selector) {
+        this.DOMelement = document.querySelector('.' + selector);
+    }
+
+    changeText(value) {
+        this.DOMelement.textContent = value;
+        return this;
+    }
+
+    changeInnerHTML(value) {
+        this.DOMelement.innerHTML = value;
+        return this;
+    }
+
+    appendChild(tag, child) {
+        document.createElement(tag).className = child;
+        this.DOMelement.appendChild = child;
+        return this;
+    }
+
+    addBefore(value) {
+        this.DOMelement.prepend(value);
+        return this;
+}
+    addAfter(value) {
+        this.DOMelement.append(value);
+        return this;
+}
+    changeAttribute(attribute, value) {
+            this.DOMelement.setAttribute(attribute, value)
+        return this
+    }
+
+    remove() {
+        this.DOMelement.remove()
+    }
+
+    getChild(selector) {
+        this.DOMelement = document.querySelector('.' + selector)
+        console.log(this.DOMelement.childNodes[0])
+        return this
+        }
+    }
+
+
+
+const newElement = new InteractionDOMelement('element')
+
+newElement
+    .changeText('измененный текст')
+    .changeInnerHTML('измененное HTML содержимое')
+    .addBefore('before ')
+    .addAfter(' after')
+    .appendChild('div', 'class')
+    .getChild('element')
+    .changeAttribute('style', 'background-color: red')
+    .remove()
