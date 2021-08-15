@@ -301,13 +301,18 @@ console.log(funcSum([90, 30, 60, 15, 15])) // 210
 // 14.  Реализуйте функцию, которая создаёт новый объект с заданным набором полей и с другим объектом в качестве прототипа
 
 
-function Number (num1, num2, num3) {
+const obj = {
+    key14: 'value14'
+}
+
+function Number (num1, num2, num3, obj) {
     this.num1 = num1;
     this.num2 = num2;
     this.num3 = num3;
+    this.proto = obj;
 }
 
-let numberRu = new Number("один", "два", "три");
+let numberRu = new Number("один", "два", "три", obj);
 
 console.log(numberRu);
 
