@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>week 3 day 5</title>
+    <link rel="stylesheet" href="week3day5.css">
+    <script src="week3day5.js" defer></script>
+</head>
+<body>
+<!-- 1.Добавьте на страницу элемент div, установите ему класс container. Найдите этот элемент в DOM по классу как посредством getElementsByClassName. так и с помощью querySelector. Повторите тот же процесс но установив другой элемент div с атрибутом id равным main_containter !-->
+
+
+<div class="container"></div>
+<div id="main_container"></div>
+
+
+<!--5. Реализуйте функцию, которая в качестве параметра принимает id инпута и возвращает значение в этом input’е-->
+
+<br><br>
+
+<label for="input5"><input id='input5' type="text" value="5 text1"></label>
+
+<input class="input6" type="text" value="5 text2">
+
+<br><br>
+<!-- 7. Добавьте элементу div в качестве потомков два элемента span с произвольным текстовым содержимым-->
+
+<div class="div7"></div>
+
+<br><br>
+
+<!--8. Реализуйте функцию, которая в качестве параметров принимает id элемента и строку, которую устанавливает в качестве текста в этом элементе. Для реализации используйте:-->
+<!--Свойство элемента textContent-->
+<!--Свойство элемента innerHTML-->
+
+
+<div id="div8-a"></div>
+<div id="div8-b"></div>
+
+<br><br>
+
+<!-- 9. Дан элемент. Найдите его первого потомка и сделайте его текст красного цвета.-->
+
+<div class="div9">
+    <div class="div9-child">9 первый потомок</div>
+    <div class="div9-child">9 второй потомок</div>
+    <div class="div9-child">9 третий потомок</div>
+    <div class="div9-child">9 четвертый потомок</div>
+    <div class="div9-child">9 пятый потомок</div>
+</div>
+
+<br><br>
+
+<!--10. Дано три элемента. Найдите для первого элемента соседа снизу его соседа снизу (следующий элемент за соседним) и добавьте ему в конец текст '!!!'.-->
+
+<span class="div10">10 первый элемент</span>
+<span class="div10">10 второй элемент</span>
+<span class="div10">10 третий элемент</span>
+<span class="div10">10 четвертый элемент</span>
+
+<br><br>
+
+<!-- Упражнения. Часть 2.-->
+
+
+<!-- 1. Создайте кнопку счётчик-кликов.-->
+
+<button class="button1" onclick="clicker()">0</button>
+
+<br><br>
+
+<!--3. Дата таблица с числами. По нажатию на ячейку в неё должен заноситься квадрат числа, которое она содержит-->
+
+<table class="table3">
+    <tr>
+        <td class="td3">1</td>
+        <td class="td3">2</td>
+        <td class="td3">3</td>
+        <td class="td3">4</td>
+        <td class="td3">5</td>
+    </tr>
+    <tr>
+        <td class="td3">6</td>
+        <td class="td3">7</td>
+        <td class="td3">8</td>
+        <td class="td3">9</td>
+        <td class="td3">10</td>
+    </tr>
+    <tr>
+        <td class="td3">11</td>
+        <td class="td3">12</td>
+        <td class="td3">13</td>
+        <td class="td3">14</td>
+        <td class="td3">15</td>
+    </tr>
+    <tr>
+        <td class="td3">16</td>
+        <td class="td3">17</td>
+        <td class="td3">18</td>
+        <td class="td3">19</td>
+        <td class="td3">20</td>
+    </tr>
+    <tr>
+        <td class="td3">21</td>
+        <td class="td3">22</td>
+        <td class="td3">23</td>
+        <td class="td3">24</td>
+        <td class="td3">25</td>
+    </tr>
+</table>
+
+<br><br>
+
+<!--4. Сделайте таблицу 5x5. Используя делегирование событий окрашивать красным цветом фон той ячейки, над которой в данный момент зависает курсор-->
+
+<table class="table4">
+    <tr>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+    </tr>
+    <tr>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+    </tr>
+    <tr>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+    </tr>
+    <tr>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+    </tr>
+    <tr>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+        <td class="td3"></td>
+    </tr>
+</table>
+
+<br><br>
+
+<!--// 5. Сделать простейшую валидацию: создать инпут, при расфокусе которого будет проверяться соответствие value input’а какой-либо строке-->
+
+<input type="text" id="input2">
+<label for="input2">введите e-mail</label>
+
+<br><br>
+
+<!--// 6. Реализовать делегирование события фокус от элемента формы к инпутам: при фокусе граница инпута должна менять цвет и ширину-->
+
+<form class="form6">
+    <label for="input61">имя</label>
+    <input class="input" type="text" id="input61">
+    <label for="input62">фамилия</label>
+    <input class="input" type="text" id="input62">
+    <label for="input63">отчество</label>
+    <input class="input" type="text" id="input63">
+    <label for="input64">город</label>
+    <input class="input" type="text" id="input64">
+    <label for="input65">телефон</label>
+    <input class="input" type="text" id="input65">
+</form>
+<br><br>
+
+<!--7. Создайте кнопку, которая удаляет себя со страницы по нажатию на неё-->
+
+<button class="button7">Delete button</button>
+<br><br>
+
+<!--8. Создайте список ol с несколькими элементами li. По нажатию на каждый элемент списка этот элемент должен удаляться-->
+
+<ol class="ol8">
+           <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+</ol>
+
+</body>
+</html>
