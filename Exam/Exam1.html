@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam1</title>
+    <link rel="stylesheet" href="Exam1.css">
+    <script src="Exam1.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+        <caption>
+            <div class="heading">
+                Структура
+            </div>
+        </caption>
+        <thead>
+            <tr class="row">
+                <th class="table_head">Имя</th>
+                <th class="table_head">Тип</th>
+                <th class="table_head">Длина/значение</th>
+                <th class="table_head">По умолчанию</th>
+                <th class="table_head null_column heading_tooltip">Null
+                <span class="tooltip">Данная колонка не влияет на пользователя</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row">
+                <td class="table_data">
+                    <input class="table_cell_fill" type="text" value="id" readonly>
+                </td>
+                <td class="table_data">
+                    <select class="table_cell_fill">
+                        <option selected>INT</option>
+                        <option>VARCHAR</option>
+                        <option>SYMBOL</option>
+                        <option>CHAR</option>
+                    </select>
+                </td>
+                <td class="table_data">
+                    <input class="table_cell_fill" type="number">
+                </td>
+                <td class="table_data">
+                    <select class="table_cell_fill">
+                        <option>Да</option>
+                        <option>Нет</option>
+                    </select>
+                </td>
+                <td class="table_data null_column">
+                    <input type="checkbox" checked>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="table_data">
+                    <input class="table_cell_fill" type="text" value="login" readonly>
+                </td>
+                <td class="table_data">
+                    <select class="table_cell_fill">
+                        <option>INT</option>
+                        <option selected>VARCHAR</option>
+                        <option>SYMBOL</option>
+                        <option>CHAR</option>
+                    </select>
+                </td>
+                <td class="table_data">
+                    <input class="table_cell_fill" type="number">
+                </td>
+                <td class="table_data">
+                    <select class="table_cell_fill">
+                        <option>Да</option>
+                        <option>Нет</option>
+                    </select>
+                </td>
+                <td class="table_data null_column">
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="table_data">
+                    <input class="table_cell_fill" type="text" value="password" readonly>
+                </td>
+                <td class="table_data">
+                    <select class="table_cell_fill">
+                        <option>INT</option>
+                        <option selected>VARCHAR</option>
+                        <option>SYMBOL</option>
+                        <option>CHAR</option>
+                    </select>
+                </td>
+                <td class="table_data">
+                    <input class="table_cell_fill" type="number">
+                </td>
+                <td class="table_data">
+                    <select class="table_cell_fill">
+                        <option>Да</option>
+                        <option>Нет</option>
+                    </select>
+                </td>
+                <td class="table_data null_column">
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="table_data">
+                    <input class="table_cell_fill" type="text" value="regdata" readonly>
+                </td>
+                <td class="table_data">
+                    <select class="table_cell_fill">
+                        <option selected>INT</option>
+                        <option>VARCHAR</option>
+                        <option>SYMBOL</option>
+                        <option>CHAR</option>
+                    </select>
+                </td>
+                <td class="table_data">
+                    <input class="table_cell_fill" type="number">
+                </td>
+                <td class="table_data">
+                    <select class="table_cell_fill">
+                        <option>Да</option>
+                        <option>Нет</option>
+                    </select>
+                </td>
+                <td class="table_data null_column">
+                    <input type="checkbox" checked>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="button-container">
+        <button class="button">Добавить столбец</button>
+    </div>
+</body>
+</html>
