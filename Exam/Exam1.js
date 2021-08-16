@@ -21,3 +21,17 @@ button.onclick = function() {
 }
 
 
+const buttonRow = document.querySelector('.button-row');
+
+buttonRow.onclick = function() {
+    const lastRow = document.querySelector("tbody > tr:last-child");
+    const cloneRow = lastRow.cloneNode(true);
+
+    const childArr = cloneRow.children;
+    const firstColumnInput = childArr[0].querySelector('.table_cell_fill');
+    firstColumnInput.setAttribute('value', '')
+    firstColumnInput.removeAttribute('readonly');
+
+    document.querySelector('.table').appendChild(cloneRow);
+
+}

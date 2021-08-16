@@ -115,3 +115,12 @@
     font-family: Georgia, sans-serif;
     cursor: cell;
 }
+
+.button-row {
+    border: 2px solid rgb(230, 234, 236);
+    box-shadow: 0 0 2px 2px rgb(230, 234, 236) inset, 0 0 2px 2px rgb(175, 181, 189);
+    background-color: rgb(220, 213, 226);
+    font-family: Georgia, sans-serif;
+    cursor: cell;
+    margin-left: 10px;
+}
