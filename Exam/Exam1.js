@@ -21,6 +21,7 @@ button.onclick = function() {
 }
 
 
+
 const buttonRow = document.querySelector('.button-row');
 
 buttonRow.onclick = function() {
@@ -28,10 +29,16 @@ buttonRow.onclick = function() {
     const cloneRow = lastRow.cloneNode(true);
 
     const childArr = cloneRow.children;
-    const firstColumnInput = childArr[0].querySelector('.table_cell_fill');
+    const firstColumnInput = childArr[1].querySelector('.table_cell_fill');
     firstColumnInput.setAttribute('value', '')
     firstColumnInput.removeAttribute('readonly');
 
-    document.querySelector('.table').appendChild(cloneRow);
+    const idColumn = childArr[0].textContent;
+    childArr[0].textContent = Number(idColumn) + 1;
+
+
+    document.querySelector('tbody').append(cloneRow);
 
 }
+
+
