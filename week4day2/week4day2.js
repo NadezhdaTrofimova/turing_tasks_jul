@@ -57,4 +57,10 @@ newButton.onclick = () => {
 
 }
 
+// 4. Реализуйте функцию, которая возвращает случайное число в диапазоне от первого переданного в неё параметра до второго
 
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
+}
+
+console.log(getRandom(1, 999));
