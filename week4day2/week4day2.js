@@ -67,12 +67,54 @@ console.log(getRandom(1, 999));
 
 // 5. Создайте промис, который успешно выполнится через 3 секунды
 
-const promiseResolve = new Promise((resolve) => {
+const promiseSuccess = new Promise((resolve) => {
     setTimeout(() =>
             resolve('Success!')
         , 3000);
 });
 
-promiseResolve.then(
-    result => console.log(result)
+promiseSuccess.then(
+    result5 => console.log(result5)
 );
+
+
+// 6. Создайте промис, который завершится с ошибкой через 3 секунды
+
+let promiseError = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let error = true;
+        if (error !== true)
+            resolve('success')
+        else
+            reject('error');
+    }, 3000);
+});
+
+promiseError.then(
+    result6 => console.log(result6),
+    error6 => console.log(error6)
+);
+
+// 7. Реализуйте функцию, возвращающую промис, в котором генерируется случайное число. Если это число оказывается больше 10 то промис должен завершиться с ошибкой.
+
+
+let promise7 = new Promise((resolve, reject) => {
+
+
+    setTimeout(() => {
+        let num = Math.floor(Math.random() * 100)
+        if (num <= 10)
+            resolve(num)
+        else
+            reject('error');
+    }, 1000)
+
+
+});
+
+promise7.then(
+    result7 => console.log(result7),
+    error7 => console.log(error7)
+);
+
+
