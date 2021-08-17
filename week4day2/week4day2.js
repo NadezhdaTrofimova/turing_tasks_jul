@@ -98,7 +98,23 @@
 // // 7. Реализуйте функцию, возвращающую промис, в котором генерируется случайное число. Если это число оказывается больше 10 то промис должен завершиться с ошибкой.
 
 
-let promise7 = new Promise((resolve, reject) => {
+// let promise7 = new Promise((resolve, reject) => {
+//
+//         let num = Math.floor(Math.random() * 100)
+//         if (num <= 10)
+//             resolve(`Result: ${num}`)
+//         else
+//             reject(`Error! ${num} > 10`);
+//     });
+//
+// promise7.then(
+//     result => console.log(result),
+//     error => console.log(error)
+// );
+
+// // 8. Используя методы catch и then обработайте результаты вызова функции из упражнения 7
+
+let promise8 = new Promise((resolve, reject) => {
 
         let num = Math.floor(Math.random() * 100)
         if (num <= 10)
@@ -107,33 +123,13 @@ let promise7 = new Promise((resolve, reject) => {
             reject(`Error! ${num} > 10`);
     });
 
-promise7.then(
-    result => console.log(result),
+promise8
+    .then(
+    result => console.log(result)
+    )
+    .catch(
     error => console.log(error)
-);
-
-// // 8. Используя методы catch и then обработайте результаты вызова функции из упражнения 7
-//
-// let promise8 = new Promise((resolve, reject) => {
-//
-//
-//     setTimeout(() => {
-//         let num = Math.floor(Math.random() * 100)
-//         if (num <= 10)
-//             resolve(num)
-//         else
-//             reject('error8');
-//     }, 1000)
-//
-// });
-//
-// promise8
-//     .then(
-//     result => console.log(result)
-//     )
-//     .catch(
-//     error => console.log(error)
-//     )
+    )
 
 
 // 9. Реализуйте две функции, которые посредством промисов можно вызывать по цепочке: первая на вход принимает массив чисел, и возвращает массив всех чётных чисел; вторая принимает на вход массив чисел и возвращает их сумму. Обработайте результаты вызовов посредством метода catch
