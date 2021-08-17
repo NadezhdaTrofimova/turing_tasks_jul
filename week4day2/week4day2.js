@@ -64,3 +64,15 @@ function getRandom(min, max) {
 }
 
 console.log(getRandom(1, 999));
+
+// 5. Создайте промис, который успешно выполнится через 3 секунды
+
+const promiseResolve = new Promise((resolve) => {
+    setTimeout(() =>
+            resolve('Success!')
+        , 3000);
+});
+
+promiseResolve.then(
+    result => console.log(result)
+);
