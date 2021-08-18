@@ -114,56 +114,98 @@
 
 // // 8. Используя методы catch и then обработайте результаты вызова функции из упражнения 7
 
-let promise8 = new Promise((resolve, reject) => {
-
-        let num = Math.floor(Math.random() * 100)
-        if (num <= 10)
-            resolve(`Result: ${num}`)
-        else
-            reject(`Error! ${num} > 10`);
-    });
-
-promise8
-    .then(
-    result => console.log(result)
-    )
-    .catch(
-    error => console.log(error)
-    )
+// let promise8 = new Promise((resolve, reject) => {
+//
+//         let num = Math.floor(Math.random() * 100)
+//         if (num <= 10)
+//             resolve(`Result: ${num}`)
+//         else
+//             reject(`Error! ${num} > 10`);
+//     });
+//
+// promise8
+//     .then(
+//     result => console.log(result)
+//     )
+//     .catch(
+//     error => console.log(error)
+//     )
 
 
 // 9. Реализуйте две функции, которые посредством промисов можно вызывать по цепочке: первая на вход принимает массив чисел, и возвращает массив всех чётных чисел; вторая принимает на вход массив чисел и возвращает их сумму. Обработайте результаты вызовов посредством метода catch
+
+
 //
-// const arrayEven = (array) => {
-//     let newArray = [];
-//     for (let i in array) {
-//         if (array[i] % 2 === 0)
-//             newArray.push(array[i])
-//     }
-//     console.log(newArray)
+// let array = [1, 6, 8, 5, 4]
+//
+// function ArrayEven (array) {
+//     return new Promise((resolve) => {
+//         let newArray = [];
+//         for (let i in array) {
+//             if (array[i] % 2 === 0)
+//                 newArray.push(array[i])
+//         }
+//         resolve(`Массив в четными числами: ${newArray}`)
+//     })
 // }
-// arrayEven([1, 6, 8, 5, 4])
 //
-// const arraySum = (array) => {
+//
+// function arraySum(array) {
+//     return new Promise((resolve) => {
 //     let sum = 0;
 //     for (let i in array) {
 //         sum += array[i]
 //     }
-//     console.log(sum)
+//     resolve(`Сумма элементов в массиве равна: ${sum}`)
+// })
 // }
 //
-// arraySum([1, 6, 8, 5, 4])
+// arrayEven(array)
+//     .then((result) => {
+//         console.log(result);
+//     })
+//     .finally(() => {
+//         return arraySum(array);
+//     })
+//     .catch(() => {
+//         console.log('error');
+//     })
+//     // .then(() => {
+//     //     console.log('Done.');
+//     // })
+
+// let array = [1, 6, 8, 5, 4]
 //
-// const promise9 = new Promise((resolve, reject) => {
-//
-//     setTimeout(() => {
-//         arrayEven()
-//     }, 1000);
-//     }
-//     ).then(arraySum)
+// let promise9 = new Promise((resolve) => {
+//     resolve(array)
+// })
 //
 // promise9
-//     .catch(error => console.log(error))
+//     .then(
+//         a => {
+//         return new Promise((resolve) => {
+//         let newArray = [];
+//         for (let i in array) {
+//             if (array[i] % 2 === 0)
+//                 newArray.push(array[i])
+//         }
+//         a = `Массив в четными числами: ${newArray}`
+//         resolve(a)
+//     })
+//     }
+//     ).then(
+//         b => {
+//         return new Promise((resolve) => {
+//         let sum = 0;
+//         for (let i in array) {
+//         sum += array[i]
+//         }
+//         b = `Сумма элементов в массиве равна: ${sum}`
+//         resolve(b)
+//     })
+//     }
+// )
+
 
 // 10. Используя синтаксис async/await измените вид того, как вызываются функции из упражнения 9
 
