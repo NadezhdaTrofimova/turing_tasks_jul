@@ -160,10 +160,11 @@ function arraySum(array) {
 
 function promise9(array) {
     return new Promise((resolve) => resolve(arrayEven(array)))
-        .catch(error => console.log('Task9: ' + error)
-        )
+
         .then((array1) => arraySum(array1))
         .then(result => console.log('Task9 Sum Even Number: ' + result))
+        .catch(error => console.log('Task9: ' + error)
+        )
 }
 
 promise9([1, 6, 8, 5, 10]);
@@ -172,6 +173,11 @@ promise9([1, 6, 8, 5, 10]);
 // 10. Используя синтаксис async/await измените вид того, как вызываются функции из упражнения 9
 
 // 11.Создайте промис, который завершится с ошибкой. Обработайте эту ошибку в блоке catch
+
+let promiseError11 = new Promise((resolve, reject) => reject('error'));
+
+promiseError11
+    .catch(result => console.log('Task11: '  + result))
 
 // 12. Реализуйте функцию, возвращающую массив промисов, каждый из которых завершается на 1 секунду позже остальных и резолвится со значением его задержки в секундах. Получите результаты
 // a. Первого выполненного промиса (Promise.race)
