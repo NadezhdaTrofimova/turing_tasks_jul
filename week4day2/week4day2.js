@@ -209,5 +209,5 @@ let array12 =[
 ];
 
 
-Promise.race([prom1, prom2, prom3]).then(result => console.log('Task12 race: ' + result))
-Promise.all([prom1, prom2, prom3]).then(result =>console.log("Task12 all: " + result))
+Promise.race(array12).then(result => console.log('Task12 race: ' + result))
+Promise.all(array12).then(result =>console.log("Task12 all: " + result))
