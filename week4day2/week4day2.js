@@ -141,13 +141,13 @@ promise8()
 // 9. Реализуйте две функции, которые посредством промисов можно вызывать по цепочке: первая на вход принимает массив чисел, и возвращает массив всех чётных чисел; вторая принимает на вход массив чисел и возвращает их сумму. Обработайте результаты вызовов посредством метода catch
 
 function arrayEven(array) {
-        let newArray = [];
-        for (let i in array) {
-            if (array[i] % 2 === 0)
-                newArray.push(array[i])
-        }
-        return newArray
+    let newArray = [];
+    for (let i in array) {
+        if (array[i] % 2 === 0)
+            newArray.push(array[i])
     }
+    return newArray
+}
 
 
 function arraySum(array) {
@@ -159,7 +159,12 @@ function arraySum(array) {
 }
 
 function promise9(array) {
-    return new Promise((resolve) => resolve(arrayEven(array)))
+    return new Promise((resolve, reject) => {
+            (array.length >= 3) ?
+                resolve(arrayEven(array)) :
+                reject('array length is too small')
+        }
+    )
 
         .then((array1) => arraySum(array1))
         .then(result => console.log('Task9 Sum Even Number: ' + result))
@@ -172,12 +177,26 @@ promise9([1, 6, 8, 5, 10]);
 
 // 10. Используя синтаксис async/await измените вид того, как вызываются функции из упражнения 9
 
+async function promise10(array) {
+    if (array.length >= 3) {
+        const arrEv = await arrayEven(array)
+        const result = await arraySum(arrEv)
+        return result
+    } else {
+        throw Error('array length is too small')
+    }
+}
+
+promise10([1, 6, 8, 5, 10])
+    .then(result => console.log('Task10: ' + result))
+    .catch(console.log)
+
 // 11.Создайте промис, который завершится с ошибкой. Обработайте эту ошибку в блоке catch
 
 let promiseError11 = new Promise((resolve, reject) => reject('error'));
 
 promiseError11
-    .catch(result => console.log('Task11: '  + result))
+    .catch(result => console.log('Task11: ' + result))
 
 // 12. Реализуйте функцию, возвращающую массив промисов, каждый из которых завершается на 1 секунду позже остальных и резолвится со значением его задержки в секундах. Получите результаты
 // a. Первого выполненного промиса (Promise.race)
