@@ -202,3 +202,12 @@ promiseError11
 // a. Первого выполненного промиса (Promise.race)
 // b. Всех промисов, которые выполнятся (Promise.all)
 
+let array12 =[
+    prom1 = new Promise(resolve => setTimeout(()=>resolve(1),1000)),
+    prom2 = new Promise(resolve => setTimeout(()=>resolve(2),2000)),
+    prom3 = new Promise(resolve => setTimeout(()=>resolve(3),3000))
+];
+
+
+Promise.race([prom1, prom2, prom3]).then(result => console.log('Task12 race: ' + result))
+Promise.all([prom1, prom2, prom3]).then(result =>console.log("Task12 all: " + result))
